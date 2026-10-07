@@ -1,0 +1,50 @@
+{
+  "strategy": "15-minute opening-range breakout; next-bar-open entry",
+  "synthetic_sample": true,
+  "assumptions": {
+    "point_value_usd": 5.0,
+    "tick_size": 0.25,
+    "slippage_ticks_per_side": 1.0,
+    "commission_usd_per_side": 0.62
+  },
+  "all": {
+    "trade_count": 40,
+    "win_rate": 0.4,
+    "mean_net_r": -0.24575487070810423,
+    "median_net_r": -1.3548397680374311,
+    "total_net_pnl_usd": -59.03839999999,
+    "profit_factor": 0.801353818490915,
+    "max_drawdown_usd": -96.73059999999211,
+    "mean_net_r_bootstrap_95_ci": [
+      -0.695931678673004,
+      0.23079692374579114
+    ]
+  },
+  "train_before_cutoff": {
+    "trade_count": 20,
+    "win_rate": 0.45,
+    "mean_net_r": -0.08998063949141992,
+    "median_net_r": -1.2813101818986343,
+    "total_net_pnl_usd": 4.064750000002464,
+    "profit_factor": 1.0298594462844182,
+    "max_drawdown_usd": -43.72169999999798,
+    "mean_net_r_bootstrap_95_ci": [
+      -0.7429078046255803,
+      0.5563555853493752
+    ]
+  },
+  "test_on_or_after_cutoff": {
+    "trade_count": 20,
+    "win_rate": 0.35,
+    "mean_net_r": -0.40152910192478847,
+    "median_net_r": -1.3872986507722174,
+    "total_net_pnl_usd": -63.10314999999246,
+    "profit_factor": 0.6082358860986049,
+    "max_drawdown_usd": -70.39344999999463,
+    "mean_net_r_bootstrap_95_ci": [
+      -0.998292575112604,
+      0.21121207446814338
+    ]
+  },
+  "split_date": "2024-01-30"
+}
